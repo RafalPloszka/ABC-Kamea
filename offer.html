@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+        <title>Oferta</title>
+
+        <link rel="stylesheet" href="./style.css" type="text/css">
+        <link rel="shortcut icon" type="image/x-icon" href="media/stamp.png" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Caveat|Special+Elite&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <script>
+          const style1 = {"color":"rgb(7, 14, 109)", "text-decoration": "underline", "font-weight": "bold"};
+          const style2 = {"color":"black", "text-decoration": "none", "font-weight": "normal"}
+          $(document).ready(function(){
+            $("#here").load("grawer.html #container1")
+            $("#pieczatki_link").css(style1);
+              $("#pieczatki_link").click(function(){
+                  $("#here").load("grawer.html #container1");
+                  $("a").css(style2);
+                  $("#pieczatki_link").css(style1);
+              });
+              $("#grawer_link").click(function(){
+                  $("#here").load("grawer.html #container2");
+                  $("a").css(style2);
+                  $("#grawer_link").css(style1);
+              });
+              $("#wizytowki_link").click(function(){
+                  $("#here").load("grawer.html #container3");
+                  $("a").css(style2);
+                  $("#wizytowki_link").css(style1);
+              });
+              $("#ulotki_link").click(function(){
+                  $("#here").load("grawer.html #container4");
+                  $("a").css(style2);
+                  $("#ulotki_link").css(style1);
+              });
+              $("#poligrafia_link").click(function(){
+                  $("#here").load("grawer.html #container5");
+                  $("a").css(style2);
+                  $("#poligrafia_link").css(style1);
+              });
+          });
+          </script>
+  </head>
+
+  <body>
+    <nav>
+      <button class="stamp" onclick="window.location.href = 'index.html';">Strona domowa</button>
+      <button class="stamp" onclick="window.location.href = 'about.html';">O firmie</button>
+      <button class="stamp current" onclick="window.location.href = 'offer.html';">Oferta</button>
+      <button class="stamp" onclick="window.location.href = 'contact.html';">Kontakt</button>
+    </nav>
+
+    <div class="line-break"></div>
+
+    <div class="content">
+
+      <div class="note categories">
+          <div><a id="pieczatki_link">Pieczątki</a></div>
+          <div><a id="grawer_link">Grawer</a></div>
+          <div><a id="wizytowki_link">Wizytówki</a></div>
+          <div><a id="ulotki_link">Ulotki</a></div>
+          <div><a id="poligrafia_link">Poligrafia</a></div>
+      </div>
+      
+    
+    
+
+      <div class="note offer" id="here">
+      </div>
+
+    </div>
+
+    <div class="contact">
+      Skontaktuj się z nami!
+      <br>
+      <i class="fas fa-phone"></i> 95 722 45 00
+      <br>
+      <i class="fas fa-envelope"></i> kamea@pieczatki.gorz.pl
+    </div>
+  </body>
+</html>
